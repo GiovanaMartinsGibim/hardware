@@ -1,5 +1,6 @@
 html{
   padding-bottom: 500px;
+
 }
 
 body,ul,li,p{
@@ -73,9 +74,6 @@ body,ul,li,p{
     grid-gap: 30px;
   } 
 
-  h3{
-    color: rgba(255, 3, 3, 0.914);
-  }
 
   h2{
     font-family: 'Times New Roman', Times, serif;
@@ -106,12 +104,37 @@ hr{
 }
 
 h3{
-  color: black;
+  color: rgb(255, 11, 11);
   font-family: 'Times New Roman', Times, serif;
   text-align: center;
 }
 
 /*css grid2*/
-.grid2{
-  grid-template-columns: repeat(4, 1fr);
+.grid> div.anuncio{
+  grid-column: 1;
+  grid-row: 2 /5;
+  display: block;
+
+}
+
+.grid > div.anuncio{
+  grid-column: auto;
+  grid-row: auto;
+  order: 3;
+}
+
+.placa{
+  font-family: 'Times New Roman', Times, serif;
+  color: black;
+  text-align: center;
+}
+
+
+.titulo{
+color: #FFF;
+font-family: 'Times New Roman', Times, serif;
+}
+
+.texto{
+  text-align: justify;
 }
